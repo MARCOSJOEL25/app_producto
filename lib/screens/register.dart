@@ -3,8 +3,8 @@ import 'package:app_producto/widget/widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class loginScreen extends StatelessWidget {
-  const loginScreen({super.key});
+class registerScreen extends StatelessWidget {
+  const registerScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class loginScreen extends StatelessWidget {
                 ),
                 const Center(
                   child: Text(
-                    'Login',
+                    'Register',
                     style: TextStyle(
                         fontSize: 30, fontFamily: AutofillHints.creditCardName),
                   ),
@@ -42,10 +42,10 @@ class loginScreen extends StatelessWidget {
             height: 30,
           ),
           TextButton(
-            onPressed: () => Navigator.pushReplacementNamed(context, 'register'),
+            onPressed: () => Navigator.pushReplacementNamed(context, 'login'),
             child: const Center(
               child: Text(
-                'Crear una cuenta nueva',
+                'Ya tienes una cuenta?',
                 style: TextStyle(
                     fontSize: 10, fontFamily: AutofillHints.creditCardName),
               ),
@@ -56,4 +56,3 @@ class loginScreen extends StatelessWidget {
     ));
   }
 }
-
